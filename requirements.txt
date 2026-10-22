@@ -1,0 +1,16 @@
+biopython>=1.83
+requests>=2.31
+pandas>=2.1
+pyarrow>=14.0
+python-dotenv>=1.0
+pyyaml>=6.0
+tqdm>=4.66
+sentence-transformers>=3.0
+torch>=2.2
+adapters>=1.0
+umap-learn>=0.5.5
+hdbscan>=0.8.33
+scikit-learn>=1.4
+anthropic>=0.40
+pytest>=8.0
+matplotlib>=3.8

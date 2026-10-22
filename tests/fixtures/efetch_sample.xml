@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PubmedArticleSet>
+<PubmedArticle>
+<MedlineCitation Status="MEDLINE"><PMID Version="1">1001</PMID>
+<Article PubModel="Print"><Journal><Title>Vaccine Journal Full</Title><JournalIssue><PubDate><Year>2021</Year></PubDate></JournalIssue></Journal>
+<ArticleTitle>mRNA vaccine <i>immunogenicity</i> in adults.</ArticleTitle>
+<Abstract>
+<AbstractText Label="BACKGROUND">mRNA vaccines have shown strong efficacy against respiratory viruses in large randomized trials across many populations worldwide.</AbstractText>
+<AbstractText Label="METHODS">We conducted a phase 3 randomized observer-blinded placebo-controlled trial enrolling adults and measured neutralizing antibody titers.</AbstractText>
+<AbstractText Label="RESULTS">Seroconversion occurred in the vast majority of participants and reactogenicity was mostly mild to moderate in severity.</AbstractText>
+</Abstract>
+<Language>eng</Language>
+<PublicationTypeList><PublicationType>Journal Article</PublicationType><PublicationType>Clinical Trial, Phase III</PublicationType></PublicationTypeList>
+</Article>
+<MedlineJournalInfo><MedlineTA>Vaccine J</MedlineTA></MedlineJournalInfo>
+<MeshHeadingList>
+<MeshHeading><DescriptorName UI="D1" MajorTopicYN="Y">mRNA Vaccines</DescriptorName></MeshHeading>
+<MeshHeading><DescriptorName UI="D2" MajorTopicYN="N">Adult</DescriptorName></MeshHeading>
+</MeshHeadingList>
+</MedlineCitation>
+<PubmedData><ArticleIdList><ArticleId IdType="pubmed">1001</ArticleId><ArticleId IdType="doi">10.1000/abc</ArticleId></ArticleIdList></PubmedData>
+</PubmedArticle>
+<PubmedArticle>
+<MedlineCitation Status="PubMed-not-MEDLINE"><PMID Version="1">1002</PMID>
+<Article><Journal><Title>Another Journal</Title><JournalIssue><PubDate><MedlineDate>2019 Dec-2020 Jan</MedlineDate></PubDate></JournalIssue></Journal>
+<ArticleTitle>Short abstract paper.</ArticleTitle>
+<Abstract><AbstractText>Too short to keep.</AbstractText></Abstract>
+<Language>eng</Language>
+</Article>
+<MedlineJournalInfo><MedlineTA>Other J</MedlineTA></MedlineJournalInfo>
+</MedlineCitation>
+</PubmedArticle>
+<PubmedArticle>
+<MedlineCitation Status="MEDLINE"><PMID Version="1">1003</PMID>
+<Article><Journal><Title>Revue Francaise</Title><JournalIssue><PubDate><Year>2018</Year></PubDate></JournalIssue></Journal>
+<ArticleTitle>Vaccination des enfants.</ArticleTitle>
+<Abstract><AbstractText>La vaccination des enfants est une mesure de sante publique essentielle qui permet de reduire la mortalite infantile liee aux maladies infectieuses evitables. Cette etude descriptive analyse les taux de couverture vaccinale observes dans plusieurs regions sur une periode de cinq ans consecutifs.</AbstractText></Abstract>
+<Language>fre</Language>
+</Article>
+<MedlineJournalInfo><MedlineTA>Rev Fr</MedlineTA></MedlineJournalInfo>
+</MedlineCitation>
+</PubmedArticle>
+</PubmedArticleSet>

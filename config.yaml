@@ -1,0 +1,36 @@
+﻿pubmed:
+  query: >-
+    ("vaccines"[MeSH Terms] OR "vaccine development"[Title/Abstract]
+     OR "immunization"[Title/Abstract])
+    AND ("2015/01/01"[PDAT] : "2025/12/31"[PDAT])
+    AND hasabstract[text] AND english[lang]
+  max_results: 5000
+  batch_size: 200          # efetch batch
+paths:
+  raw: data/raw
+  interim: data/interim
+  processed: data/processed
+embedding:
+  model: allenai/specter2_base
+  adapter: allenai/specter2   # proximity adapter
+  batch_size: 32
+cluster:
+  umap: {n_components: 8, n_neighbors: 15, min_dist: 0.0, metric: cosine, random_state: 42}
+  umap_2d: {n_components: 2, n_neighbors: 15, min_dist: 0.1, metric: cosine, random_state: 42}
+  hdbscan: {min_cluster_size: 40, min_samples: 10, metric: euclidean}
+baseline:
+  tfidf: {max_features: 20000, ngram_range: [1, 2], min_df: 5, sublinear_tf: true}
+  # kmeans k is set at runtime = number of non-noise HDBSCAN clusters (fairness; see EVALUATION.md)
+llm:
+  model: claude-haiku-4-5
+  max_abstract_chars: 6000
+  concurrency: 4
+  fallback_model: claude-haiku-4-5-20251001   # used only for papers the primary model refuses
+  max_tokens: 700
+  # USD per million tokens, applied to all calls in the cost estimate and actual-cost report of extract_llm
+  price_per_mtok: {input: .1, output: .50}
+evaluation:
+  mesh_label_strategy: top_level_major   # see EVALUATION.md
+  random_state: 42
+
+

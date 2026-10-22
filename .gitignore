@@ -1,0 +1,23 @@
+.env
+.env.local
+.env.*.local
+
+# Agent / assistant instruction and working files (local only)
+AGENTS.md
+CLAUDE.md
+PROGRESS.md
+PROBLEMS.md
+docs/PLAN.md
+.github/copilot-instructions.md
+.claude/
+.copilot/
+.cursor/
+data/*
+!data/*/
+data/*/*
+!data/*/.gitkeep
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.pytest_cache/
