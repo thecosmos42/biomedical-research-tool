@@ -4,6 +4,16 @@ A Python NLP pipeline that collects vaccine-related biomedical abstracts from Pu
 
 The corpus covers infectious disease and vaccines, published 2015 to 2025, with roughly 5,000 abstracts. Topic clusters come from SPECTER2 embeddings reduced with UMAP and grouped with HDBSCAN. Each clustering is benchmarked against a TF-IDF and KMeans baseline, using MeSH descriptors as reference labels.
 
+## Why it's useful
+
+Business development teams in biotech and pharma need to notice shifts in a field early, but reading journals by hand is slow and uneven. This tool reads a corpus of abstracts in bulk and turns it into data you can query:
+
+- **Which topics are growing.** Abstracts are grouped into research themes, so a new cluster shows up in the data rather than in someone's reading list.
+- **Which techniques and models are in use.** Methods such as ELISA or organoid models are pulled from the text and normalized, so "neutralization assay" and "neutralisation test" count as one technique.
+- **Whether the results hold up.** Groupings are compared against a TF-IDF baseline and checked against MeSH labels. Every output row keeps its PubMed ID, so you can trace it back to the source abstract.
+
+The current scope is vaccines and infectious disease, 2015 to 2025, about 5,000 abstracts. The search query lives in `config.yaml`, so pointing the pipeline at another topic is mostly a configuration change. Linking authors' affiliations to companies is planned but not yet implemented.
+
 ## Pipeline
 
 ```
